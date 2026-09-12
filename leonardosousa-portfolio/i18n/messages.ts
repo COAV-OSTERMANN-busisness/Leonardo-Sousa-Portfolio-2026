@@ -161,7 +161,7 @@ export const messages = {
         "Tem um projeto, uma ideia ou uma oportunidade? Entre em contato.",
 
       form: {
-        name: "Nome",
+        name: "Nome ou empresa",
         namePlaceholder: "Seu nome",
         email: "E-mail",
         emailPlaceholder: "seu@email.com",
@@ -190,6 +190,75 @@ export const messages = {
       closeMenu: "Fechar menu",
       changeLanguage: "Alterar idioma",
       externalLink: "Abrir em nova aba",
+    },
+
+    legal: {
+      terms: {
+        title: "Termo de Uso e Política de Privacidade",
+
+        sections: [
+          {
+            id: "collected-data",
+            title: "1. Dados Coletados",
+            content:
+              "Coletamos exclusivamente os seguintes dados por meio do formulário de contato disponibilizado:\n- Nome do cliente ou empresa;\n- Endereço de e-mail;\n- Mensagem enviada pelo usuário.\n\n(Art. 5º, I, LGPD – Definição de dado pessoal)",
+          },
+          {
+            id: "purpose",
+            title: "2. Finalidade da Coleta",
+            content:
+              "Os dados fornecidos são utilizados exclusivamente para estabelecer contato com o titular, compreender suas necessidades e oferecer uma resposta ou serviço adequado.\n\n(Art. 6º, I e II, LGPD – Princípios da finalidade e adequação)",
+          },
+          {
+            id: "consent",
+            title: "3. Consentimento",
+            content:
+              "Ao preencher e enviar o formulário, o titular autoriza expressamente o uso dos dados para a finalidade indicada neste termo.\n\n(Art. 7º, I, LGPD – Consentimento como base legal para tratamento)",
+          },
+          {
+            id: "sharing",
+            title: "4. Compartilhamento e Divulgação",
+            content:
+              "Os dados não serão, em hipótese alguma, vendidos, compartilhados, cedidos ou divulgados a terceiros.\n\n(Art. 6º, VII, LGPD – Necessidade; Art. 9º, §4º – Clareza quanto à utilização)",
+          },
+          {
+            id: "security",
+            title: "5. Armazenamento e Segurança",
+            content:
+              "Os dados serão armazenados em ambiente seguro e controlado, com acesso restrito, adotando-se medidas técnicas e administrativas para protegê-los contra acessos não autorizados, perdas, alterações ou destruição.\n\n(Art. 46, LGPD – Segurança da informação)",
+          },
+          {
+            id: "rights",
+            title: "6. Direitos do Titular",
+            content:
+              "O titular dos dados poderá, a qualquer momento, solicitar:\n- Confirmação da existência de tratamento;\n- Acesso aos dados;\n- Correção de dados incompletos ou desatualizados;\n- Revogação do consentimento e exclusão dos dados.\n\n(Art. 18, LGPD – Direitos do titular)",
+          },
+          {
+            id: "officer",
+            title: "7. Encarregado pelo Tratamento",
+            content:
+              "O responsável (encarregado) pelo tratamento de dados poderá ser contatado através do e-mail: contato@leonardosousa.dev.br\n\n(Art. 41, LGPD – Encarregado pelo tratamento)",
+          },
+          {
+            id: "changes",
+            title: "8. Alterações desta Política",
+            content:
+              "Reservamo-nos o direito de modificar esta Política a qualquer momento. Alterações entrarão em vigor imediatamente após a publicação neste local.",
+          },
+          {
+            id: "legislation",
+            title: "9. Legislação Aplicável",
+            content:
+              "Este termo é regido pela Lei nº 13.709/2018 – Lei Geral de Proteção de Dados Pessoais e demais normas aplicáveis.",
+          },
+        ],
+
+        consent:
+          "Declaro que li e aceito o Termo de Uso e a Política de Privacidade, autorizando o tratamento dos meus dados para a finalidade informada.",
+        accept: "ACEITAR",
+        cancel: "CANCELAR",
+        close: "FECHAR",
+      },
     },
   },
 
@@ -352,7 +421,7 @@ export const messages = {
       description: "Have a project, an idea or an opportunity? Get in touch.",
 
       form: {
-        name: "Name",
+        name: "Name or company",
         namePlaceholder: "Your name",
         email: "Email",
         emailPlaceholder: "your@email.com",
@@ -381,6 +450,75 @@ export const messages = {
       closeMenu: "Close menu",
       changeLanguage: "Change language",
       externalLink: "Open in a new tab",
+    },
+
+    legal: {
+      terms: {
+        title: "Terms of Use and Privacy Policy",
+
+        sections: [
+          {
+            id: "collected-data",
+            title: "1. Data Collected",
+            content:
+              "We exclusively collect the following data through the available contact form:\n- Client or company name;\n- Email address;\n- Message submitted by the user.\n\n(Article 5, I, LGPD – Definition of personal data)",
+          },
+          {
+            id: "purpose",
+            title: "2. Purpose of Data Collection",
+            content:
+              "The data provided is used exclusively to establish contact with the data subject, understand their needs, and provide an appropriate response or service.\n\n(Article 6, I and II, LGPD – Principles of purpose and adequacy)",
+          },
+          {
+            id: "consent",
+            title: "3. Consent",
+            content:
+              "By completing and submitting the form, the data subject expressly authorizes the use of their data for the purpose indicated in these terms.\n\n(Article 7, I, LGPD – Consent as a legal basis for processing)",
+          },
+          {
+            id: "sharing",
+            title: "4. Sharing and Disclosure",
+            content:
+              "Under no circumstances will the data be sold, shared, transferred, or disclosed to third parties.\n\n(Article 6, VII, LGPD – Necessity; Article 9, §4 – Clarity regarding use)",
+          },
+          {
+            id: "security",
+            title: "5. Storage and Security",
+            content:
+              "The data will be stored in a secure and controlled environment with restricted access, using technical and administrative measures to protect it against unauthorized access, loss, alteration, or destruction.\n\n(Article 46, LGPD – Information security)",
+          },
+          {
+            id: "rights",
+            title: "6. Data Subject Rights",
+            content:
+              "The data subject may, at any time, request:\n- Confirmation of the existence of processing;\n- Access to their data;\n- Correction of incomplete or outdated data;\n- Withdrawal of consent and deletion of data.\n\n(Article 18, LGPD – Data subject rights)",
+          },
+          {
+            id: "officer",
+            title: "7. Data Protection Officer",
+            content:
+              "The person responsible for data processing may be contacted at: contato@leonardosousa.dev.br\n\n(Article 41, LGPD – Data Protection Officer)",
+          },
+          {
+            id: "changes",
+            title: "8. Changes to this Policy",
+            content:
+              "We reserve the right to modify this Policy at any time. Changes will take effect immediately upon publication in this location.",
+          },
+          {
+            id: "legislation",
+            title: "9. Applicable Law",
+            content:
+              "These terms are governed by Law No. 13,709/2018 – Brazilian General Data Protection Law (LGPD) and other applicable regulations.",
+          },
+        ],
+
+        consent:
+          "I declare that I have read and accept the Terms of Use and Privacy Policy, authorizing the processing of my data for the stated purpose.",
+        accept: "ACCEPT",
+        cancel: "CANCEL",
+        close: "CLOSE",
+      },
     },
   },
 
@@ -546,7 +684,7 @@ export const messages = {
         "¿Tienes un proyecto, una idea o una oportunidad? Ponte en contacto.",
 
       form: {
-        name: "Nombre",
+        name: "Nombre o empresa",
         namePlaceholder: "Tu nombre",
         email: "Correo electrónico",
         emailPlaceholder: "tu@email.com",
@@ -575,6 +713,75 @@ export const messages = {
       closeMenu: "Cerrar menú",
       changeLanguage: "Cambiar idioma",
       externalLink: "Abrir en una nueva pestaña",
+    },
+
+    legal: {
+      terms: {
+        title: "Términos de Uso y Política de Privacidad",
+
+        sections: [
+          {
+            id: "collected-data",
+            title: "1. Datos Recopilados",
+            content:
+              "Recopilamos exclusivamente los siguientes datos mediante el formulario de contacto disponible:\n- Nombre del cliente o empresa;\n- Dirección de correo electrónico;\n- Mensaje enviado por el usuario.\n\n(Art. 5º, I, LGPD – Definición de dato personal)",
+          },
+          {
+            id: "purpose",
+            title: "2. Finalidad de la Recopilación",
+            content:
+              "Los datos proporcionados se utilizan exclusivamente para establecer contacto con el titular, comprender sus necesidades y ofrecer una respuesta o servicio adecuado.\n\n(Art. 6º, I y II, LGPD – Principios de finalidad y adecuación)",
+          },
+          {
+            id: "consent",
+            title: "3. Consentimiento",
+            content:
+              "Al completar y enviar el formulario, el titular autoriza expresamente el uso de sus datos para la finalidad indicada en estos términos.\n\n(Art. 7º, I, LGPD – Consentimiento como base legal para el tratamiento)",
+          },
+          {
+            id: "sharing",
+            title: "4. Compartición y Divulgación",
+            content:
+              "Los datos no serán, bajo ninguna circunstancia, vendidos, compartidos, cedidos o divulgados a terceros.\n\n(Art. 6º, VII, LGPD – Necesidad; Art. 9º, §4º – Claridad respecto a su utilización)",
+          },
+          {
+            id: "security",
+            title: "5. Almacenamiento y Seguridad",
+            content:
+              "Los datos serán almacenados en un entorno seguro y controlado, con acceso restringido, adoptando medidas técnicas y administrativas para protegerlos contra accesos no autorizados, pérdidas, alteraciones o destrucción.\n\n(Art. 46, LGPD – Seguridad de la información)",
+          },
+          {
+            id: "rights",
+            title: "6. Derechos del Titular",
+            content:
+              "El titular de los datos podrá, en cualquier momento, solicitar:\n- Confirmación de la existencia del tratamiento;\n- Acceso a los datos;\n- Corrección de datos incompletos o desactualizados;\n- Revocación del consentimiento y eliminación de los datos.\n\n(Art. 18, LGPD – Derechos del titular)",
+          },
+          {
+            id: "officer",
+            title: "7. Responsable del Tratamiento",
+            content:
+              "La persona responsable del tratamiento de datos podrá ser contactada a través del correo electrónico: contato@leonardosousa.dev.br\n\n(Art. 41, LGPD – Responsable del tratamiento)",
+          },
+          {
+            id: "changes",
+            title: "8. Modificaciones de esta Política",
+            content:
+              "Nos reservamos el derecho de modificar esta Política en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en este lugar.",
+          },
+          {
+            id: "legislation",
+            title: "9. Legislación Aplicable",
+            content:
+              "Estos términos se rigen por la Ley nº 13.709/2018 – Ley General de Protección de Datos Personales de Brasil (LGPD) y demás normas aplicables.",
+          },
+        ],
+
+        consent:
+          "Declaro que he leído y acepto los Términos de Uso y la Política de Privacidad, autorizando el tratamiento de mis datos para la finalidad indicada.",
+        accept: "ACEPTAR",
+        cancel: "CANCELAR",
+        close: "CERRAR",
+      },
     },
   },
 
@@ -738,7 +945,7 @@ export const messages = {
         "プロジェクト、アイデア、または仕事の機会についてお気軽にご連絡ください。",
 
       form: {
-        name: "名前",
+        name: "氏名または会社名",
         namePlaceholder: "お名前",
         email: "メールアドレス",
         emailPlaceholder: "your@email.com",
@@ -767,6 +974,75 @@ export const messages = {
       closeMenu: "メニューを閉じる",
       changeLanguage: "言語を変更",
       externalLink: "新しいタブで開く",
+    },
+
+    legal: {
+      terms: {
+        title: "利用規約およびプライバシーポリシー",
+
+        sections: [
+          {
+            id: "collected-data",
+            title: "1. 収集するデータ",
+            content:
+              "提供されているお問い合わせフォームを通じて、以下のデータのみを収集します。\n- お客様または会社名;\n- メールアドレス;\n- ユーザーが送信したメッセージ。\n\n（LGPD 第5条 I号 – 個人データの定義）",
+          },
+          {
+            id: "purpose",
+            title: "2. データ収集の目的",
+            content:
+              "提供されたデータは、データ主体への連絡、そのニーズの把握、および適切な回答またはサービスの提供のためにのみ使用されます。\n\n（LGPD 第6条 I号およびII号 – 目的および適合性の原則）",
+          },
+          {
+            id: "consent",
+            title: "3. 同意",
+            content:
+              "フォームへの入力および送信を行うことにより、データ主体は、本規約に記載された目的のために自身のデータを使用することに明示的に同意するものとします。\n\n（LGPD 第7条 I号 – データ処理の法的根拠としての同意）",
+          },
+          {
+            id: "sharing",
+            title: "4. 共有および開示",
+            content:
+              "いかなる場合においても、データを第三者に販売、共有、譲渡、または開示することはありません。\n\n（LGPD 第6条 VII号 – 必要性；第9条 §4 – 利用に関する明確性）",
+          },
+          {
+            id: "security",
+            title: "5. 保管およびセキュリティ",
+            content:
+              "データは、安全かつ管理された環境において、アクセスを制限した状態で保管されます。また、不正アクセス、紛失、改変、破壊からデータを保護するため、技術的および管理上の対策を講じます。\n\n（LGPD 第46条 – 情報セキュリティ）",
+          },
+          {
+            id: "rights",
+            title: "6. データ主体の権利",
+            content:
+              "データ主体は、いつでも以下を請求することができます。\n- データ処理の存在に関する確認;\n- データへのアクセス;\n- 不完全または更新されていないデータの訂正;\n- 同意の撤回およびデータの削除。\n\n（LGPD 第18条 – データ主体の権利）",
+          },
+          {
+            id: "officer",
+            title: "7. データ処理責任者",
+            content:
+              "データ処理の責任者には、以下のメールアドレスから連絡することができます：contato@leonardosousa.dev.br\n\n（LGPD 第41条 – データ処理責任者）",
+          },
+          {
+            id: "changes",
+            title: "8. 本ポリシーの変更",
+            content:
+              "当方は、本ポリシーをいつでも変更する権利を有します。変更は、この場所で公開された時点から直ちに効力を持つものとします。",
+          },
+          {
+            id: "legislation",
+            title: "9. 適用法",
+            content:
+              "本規約は、法律第13,709/2018号 – ブラジル一般データ保護法（LGPD）およびその他の適用される規則に準拠します。",
+          },
+        ],
+
+        consent:
+          "私は、利用規約およびプライバシーポリシーを読み、これらに同意したことを宣言し、記載された目的のための私のデータの処理を承認します。",
+        accept: "同意する",
+        cancel: "キャンセル",
+        close: "閉じる",
+      },
     },
   },
 } as const;
