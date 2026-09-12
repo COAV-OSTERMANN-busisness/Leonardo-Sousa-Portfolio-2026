@@ -26,8 +26,7 @@ export const messages = {
         fullStack: "Full Stack",
         web: "Web",
         mobile: "Mobile",
-        cloud: "Cloud",
-        logistics: "Logística",
+        cloud: "Cloud"
       },
       imageAlt: "Leonardo Sousa — Software Developer",
     },
@@ -164,8 +163,7 @@ export const messages = {
         fullStack: "Full Stack",
         web: "Web",
         mobile: "Mobile",
-        cloud: "Cloud",
-        logistics: "Logistics",
+        cloud: "Cloud"
       },
       imageAlt: "Leonardo Sousa — Software Developer",
     },
@@ -299,8 +297,7 @@ export const messages = {
         fullStack: "Full Stack",
         web: "Web",
         mobile: "Mobile",
-        cloud: "Cloud",
-        logistics: "Logística",
+        cloud: "Cloud"
       },
       imageAlt: "Leonardo Sousa — Software Developer",
     },
@@ -437,9 +434,7 @@ export const messages = {
         fullStack: "フルスタック",
         web: "Web",
         mobile: "モバイル",
-        cloud: "クラウド",
-        logistics: "物流",
-      },
+        cloud: "クラウド"},
       imageAlt: "Leonardo Sousa — Software Developer",
     },
 
