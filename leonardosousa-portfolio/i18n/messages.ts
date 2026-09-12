@@ -26,7 +26,7 @@ export const messages = {
         fullStack: "Full Stack",
         web: "Web",
         mobile: "Mobile",
-        cloud: "Cloud"
+        cloud: "Cloud",
       },
       imageAlt: "Leonardo Sousa — Software Developer",
     },
@@ -86,6 +86,63 @@ export const messages = {
     portfolio: {
       eyebrow: "PORTFÓLIO",
       title: "Projetos selecionados",
+      viewProject: "VER PROJETO",
+
+      projects: {
+        "simple-redis-caching": {
+          title: "Simple Redis Caching",
+          description:
+            "Pacote NPM desenvolvido para simplificar operações de cache com Redis.",
+          type: "Pacote NPM",
+          technologies: [],
+          status: "",
+        },
+
+        "jc-cargas-aereas-rodoviarias": {
+          title: "JC Cargas Aéreas e Rodoviárias",
+          description:
+            "Site institucional desenvolvido para a JC Cargas Aéreas e Rodoviárias com o objetivo de fortalecer sua presença digital, ampliar sua visibilidade e competitividade no mercado de serviços logísticos.",
+          type: "Site institucional",
+          technologies: [],
+          status: "",
+        },
+
+        "pra-la-logistica": {
+          title: "Pra Lá Logística",
+          description:
+            "Site institucional desenvolvido para a Pra Lá Logística com o objetivo de fortalecer sua presença digital, ampliar sua visibilidade e competitividade no mercado de serviços logísticos.",
+          type: "Site institucional",
+          technologies: [],
+          status: "",
+        },
+
+        "exata-sl": {
+          title: "Exata SL",
+          description:
+            "Site institucional desenvolvido para a Exata Soluções Logísticas com o objetivo de fortalecer sua presença digital, ampliar sua visibilidade e competitividade no mercado de serviços logísticos nacional e internacional, utilizando WordPress.",
+          type: "Site institucional",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-transportes-log": {
+          title: "Gama Transportes Log",
+          description:
+            "Landing page comercial desenvolvida para promover a nova rede de transporte rodoviário do cliente.",
+          type: "Landing page comercial",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-fsa": {
+          title: "Gama FSA",
+          description:
+            "Wireframe frontend e arquitetura frontend desenvolvidos para o projeto.",
+          type: "Arquitetura frontend",
+          technologies: [],
+          status: "",
+        },
+      },
 
       modal: {
         year: "Ano",
@@ -163,7 +220,7 @@ export const messages = {
         fullStack: "Full Stack",
         web: "Web",
         mobile: "Mobile",
-        cloud: "Cloud"
+        cloud: "Cloud",
       },
       imageAlt: "Leonardo Sousa — Software Developer",
     },
@@ -221,6 +278,63 @@ export const messages = {
     portfolio: {
       eyebrow: "PORTFOLIO",
       title: "Selected projects",
+      viewProject: "VIEW PROJECT",
+
+      projects: {
+        "simple-redis-caching": {
+          title: "Simple Redis Caching",
+          description:
+            "NPM package developed to simplify Redis caching operations.",
+          type: "NPM package",
+          technologies: [],
+          status: "",
+        },
+
+        "jc-cargas-aereas-rodoviarias": {
+          title: "JC Cargas Aéreas e Rodoviárias",
+          description:
+            "Institutional website developed for JC Cargas Aéreas e Rodoviárias with the goal of strengthening its digital presence, increasing its visibility and competitiveness in the logistics services market.",
+          type: "Institutional website",
+          technologies: [],
+          status: "",
+        },
+
+        "pra-la-logistica": {
+          title: "Pra Lá Logística",
+          description:
+            "Institutional website developed for Pra Lá Logística with the goal of strengthening its digital presence, increasing its visibility and competitiveness in the logistics services market.",
+          type: "Institutional website",
+          technologies: [],
+          status: "",
+        },
+
+        "exata-sl": {
+          title: "Exata SL",
+          description:
+            "Institutional website developed for Exata Soluções Logísticas with the goal of strengthening its digital presence, increasing its visibility and competitiveness in the national and international logistics services market, using WordPress.",
+          type: "Institutional website",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-transportes-log": {
+          title: "Gama Transportes Log",
+          description:
+            "Commercial landing page developed to promote the client's new road transportation network.",
+          type: "Commercial landing page",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-fsa": {
+          title: "Gama FSA",
+          description:
+            "Frontend wireframe and frontend architecture developed for the project.",
+          type: "Frontend architecture",
+          technologies: [],
+          status: "",
+        },
+      },
 
       modal: {
         year: "Year",
@@ -297,7 +411,7 @@ export const messages = {
         fullStack: "Full Stack",
         web: "Web",
         mobile: "Mobile",
-        cloud: "Cloud"
+        cloud: "Cloud",
       },
       imageAlt: "Leonardo Sousa — Software Developer",
     },
@@ -357,6 +471,63 @@ export const messages = {
     portfolio: {
       eyebrow: "PORTAFOLIO",
       title: "Proyectos seleccionados",
+      viewProject: "VER PROYECTO",
+
+      projects: {
+        "simple-redis-caching": {
+          title: "Simple Redis Caching",
+          description:
+            "Paquete NPM desarrollado para simplificar las operaciones de caché con Redis.",
+          type: "Paquete NPM",
+          technologies: [],
+          status: "",
+        },
+
+        "jc-cargas-aereas-rodoviarias": {
+          title: "JC Cargas Aéreas e Rodoviárias",
+          description:
+            "Sitio web institucional desarrollado para JC Cargas Aéreas e Rodoviárias con el objetivo de fortalecer su presencia digital, ampliar su visibilidad y competitividad en el mercado de servicios logísticos.",
+          type: "Sitio web institucional",
+          technologies: [],
+          status: "",
+        },
+
+        "pra-la-logistica": {
+          title: "Pra Lá Logística",
+          description:
+            "Sitio web institucional desarrollado para Pra Lá Logística con el objetivo de fortalecer su presencia digital, ampliar su visibilidad y competitividad en el mercado de servicios logísticos.",
+          type: "Sitio web institucional",
+          technologies: [],
+          status: "",
+        },
+
+        "exata-sl": {
+          title: "Exata SL",
+          description:
+            "Sitio web institucional desarrollado para Exata Soluções Logísticas con el objetivo de fortalecer su presencia digital, ampliar su visibilidad y competitividad en el mercado nacional e internacional de servicios logísticos, utilizando WordPress.",
+          type: "Sitio web institucional",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-transportes-log": {
+          title: "Gama Transportes Log",
+          description:
+            "Landing page comercial desarrollada para promocionar la nueva red de transporte por carretera del cliente.",
+          type: "Landing page comercial",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-fsa": {
+          title: "Gama FSA",
+          description:
+            "Wireframe frontend y arquitectura frontend desarrollados para el proyecto.",
+          type: "Arquitectura frontend",
+          technologies: [],
+          status: "",
+        },
+      },
 
       modal: {
         year: "Año",
@@ -434,7 +605,8 @@ export const messages = {
         fullStack: "フルスタック",
         web: "Web",
         mobile: "モバイル",
-        cloud: "クラウド"},
+        cloud: "クラウド",
+      },
       imageAlt: "Leonardo Sousa — Software Developer",
     },
 
@@ -490,7 +662,64 @@ export const messages = {
 
     portfolio: {
       eyebrow: "ポートフォリオ",
-      title: "主なプロジェクト",
+      title: "選定プロジェクト",
+      viewProject: "プロジェクトを見る",
+
+      projects: {
+        "simple-redis-caching": {
+          title: "Simple Redis Caching",
+          description:
+            "Redisのキャッシュ操作を簡素化するために開発されたNPMパッケージ。",
+          type: "NPMパッケージ",
+          technologies: [],
+          status: "",
+        },
+
+        "jc-cargas-aereas-rodoviarias": {
+          title: "JC Cargas Aéreas e Rodoviárias",
+          description:
+            "JC Cargas Aéreas e Rodoviáriasのデジタルプレゼンスを強化し、物流サービス市場における認知度と競争力を高めることを目的として開発された企業向けWebサイトです。",
+          type: "企業向けWebサイト",
+          technologies: [],
+          status: "",
+        },
+
+        "pra-la-logistica": {
+          title: "Pra Lá Logística",
+          description:
+            "Pra Lá Logísticaのデジタルプレゼンスを強化し、物流サービス市場における認知度と競争力を高めることを目的として開発された企業向けWebサイトです。",
+          type: "企業向けWebサイト",
+          technologies: [],
+          status: "",
+        },
+
+        "exata-sl": {
+          title: "Exata SL",
+          description:
+            "Exata Soluções Logísticasのデジタルプレゼンスを強化し、国内外の物流サービス市場における認知度と競争力を高めることを目的として、WordPressを使用して開発された企業向けWebサイトです。",
+          type: "企業向けWebサイト",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-transportes-log": {
+          title: "Gama Transportes Log",
+          description:
+            "クライアントの新しい道路輸送ネットワークをプロモーションするために開発された商用ランディングページ。",
+          type: "商用ランディングページ",
+          technologies: [],
+          status: "",
+        },
+
+        "gama-fsa": {
+          title: "Gama FSA",
+          description:
+            "プロジェクト向けに開発されたフロントエンドワイヤーフレームおよびフロントエンドアーキテクチャ。",
+          type: "フロントエンドアーキテクチャ",
+          technologies: [],
+          status: "",
+        },
+      },
 
       modal: {
         year: "年",

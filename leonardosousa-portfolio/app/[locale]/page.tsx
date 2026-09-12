@@ -1,4 +1,4 @@
-import { About, Header, Hero, Skills } from "@/components";
+import { About, Header, Hero, Portfolio, Skills } from "@/components";
 
 import { getMessages, type Locale } from "@/i18n";
 
@@ -18,6 +18,7 @@ export default async function Page({ params }: PageProps) {
         <Hero messages={messages} />
         <About locale={locale} />
         <Skills locale={locale} />
+        <Portfolio locale={locale} />
       </main>
     </>
   );
