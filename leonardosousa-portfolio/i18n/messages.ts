@@ -181,7 +181,17 @@ export const messages = {
     footer: {
       rights: "Todos os direitos reservados.",
       linkedin: "LinkedIn",
+      github: "GitHub",
       whatsapp: "WhatsApp",
+      navigation: {
+        label: "Navegação",
+        home: "Início",
+        about: "Sobre",
+        skills: "Skills",
+        portfolio: "Projetos",
+        contact: "Contato",
+      },
+      languages: "Idiomas",
     },
 
     accessibility: {
@@ -441,7 +451,17 @@ export const messages = {
     footer: {
       rights: "All rights reserved.",
       linkedin: "LinkedIn",
+      github: "GitHub",
       whatsapp: "WhatsApp",
+      navigation: {
+        label: "Navigation",
+        home: "Home",
+        about: "About",
+        skills: "Skills",
+        portfolio: "Projects",
+        contact: "Contact",
+      },
+      languages: "Languages",
     },
 
     accessibility: {
@@ -704,7 +724,17 @@ export const messages = {
     footer: {
       rights: "Todos los derechos reservados.",
       linkedin: "LinkedIn",
+      github: "GitHub",
       whatsapp: "WhatsApp",
+      navigation: {
+        label: "Navegación",
+        home: "Inicio",
+        about: "Sobre mí",
+        skills: "Skills",
+        portfolio: "Proyectos",
+        contact: "Contacto",
+      },
+      languages: "Idiomas",
     },
 
     accessibility: {
@@ -963,9 +993,19 @@ export const messages = {
     },
 
     footer: {
-      rights: "All rights reserved.",
+      rights: "すべての権利を保有します。",
       linkedin: "LinkedIn",
+      github: "GitHub",
       whatsapp: "WhatsApp",
+      navigation: {
+        label: "ナビゲーション",
+        home: "ホーム",
+        about: "概要",
+        skills: "スキル",
+        portfolio: "プロジェクト",
+        contact: "お問い合わせ",
+      },
+      languages: "言語",
     },
 
     accessibility: {

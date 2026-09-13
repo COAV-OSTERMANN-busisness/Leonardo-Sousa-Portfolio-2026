@@ -1,6 +1,7 @@
 import {
   About,
   Contact,
+  Footer,
   Header,
   Hero,
   Portfolio,
@@ -28,6 +29,8 @@ export default async function Page({ params }: PageProps) {
         <Portfolio locale={locale} />
         <Contact locale={locale} />
       </main>
+
+      <Footer locale={locale} />
     </>
   );
 }
