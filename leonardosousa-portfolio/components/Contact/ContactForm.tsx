@@ -7,21 +7,16 @@ import { sendContactEmail } from "@/lib/emailjs";
 
 import { LegalModal } from "@/components/Legal";
 
-type ContactFormMessages =
-  ReturnType<typeof getMessages>["contact"]["form"];
+type ContactFormMessages = ReturnType<typeof getMessages>["contact"]["form"];
 
-type ContactTermsMessages =
-  ReturnType<typeof getMessages>["legal"]["terms"];
+type ContactTermsMessages = ReturnType<typeof getMessages>["legal"]["terms"];
 
 interface ContactFormProps {
   messages: ContactFormMessages;
   terms: ContactTermsMessages;
 }
 
-export default function ContactForm({
-  messages,
-  terms,
-}: ContactFormProps) {
+export default function ContactForm({ messages, terms }: ContactFormProps) {
   const [nameOrCompany, setNameOrCompany] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -30,13 +25,9 @@ export default function ContactForm({
   const [termsOpen, setTermsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const [status, setStatus] = useState<
-    "idle" | "success" | "error"
-  >("idle");
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = (
-    event: FormEvent<HTMLFormElement>,
-  ) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (loading || website.trim()) {
@@ -58,7 +49,7 @@ export default function ContactForm({
 
     try {
       await sendContactEmail({
-        name: nameOrCompany,
+        nameOrCompany,
         email,
         message,
       });

@@ -1,10 +1,10 @@
 import emailjs from "@emailjs/browser";
 
-interface ContactFormData {
-  name: string;
-  email: string;
-  message: string;
-}
+import type {
+  ContactFormData,
+  EmailJSConfig,
+  EmailJSParams,
+} from "@/types/emailjs";
 
 const MAX_NAME_LENGTH = 120;
 const MAX_EMAIL_LENGTH = 254;
@@ -37,7 +37,7 @@ function validateEmail(email: string): boolean {
   );
 }
 
-export async function sendContactEmail(data: ContactFormData) {
+function getEmailJSConfig(): EmailJSConfig {
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
@@ -46,11 +46,21 @@ export async function sendContactEmail(data: ContactFormData) {
     throw new Error("EmailJS configuration is incomplete.");
   }
 
-  const name = sanitizeText(data.name, MAX_NAME_LENGTH);
+  return {
+    serviceId,
+    templateId,
+    publicKey,
+  };
+}
+
+function prepareContactData(data: ContactFormData): EmailJSParams {
+  const nameOrCompany = sanitizeText(data.nameOrCompany, MAX_NAME_LENGTH);
+
   const email = sanitizeText(data.email, MAX_EMAIL_LENGTH);
+
   const message = sanitizeMessage(data.message);
 
-  if (!name || !email || !message) {
+  if (!nameOrCompany || !email || !message) {
     throw new Error("Invalid contact form data.");
   }
 
@@ -58,17 +68,19 @@ export async function sendContactEmail(data: ContactFormData) {
     throw new Error("Invalid email address.");
   }
 
-  return emailjs.send(
-    serviceId,
-    templateId,
-    {
-      name,
-      email,
-      message,
-      timestamp: new Date().toLocaleString("pt-BR"),
-    },
-    {
-      publicKey,
-    }
-  );
+  return {
+    nameOrCompany,
+    email,
+    message,
+    timestamp: new Date().toLocaleString("pt-BR"),
+  };
+}
+
+export async function sendContactEmail(data: ContactFormData): Promise<void> {
+  const config = getEmailJSConfig();
+  const templateParams = prepareContactData(data);
+
+  await emailjs.send(config.serviceId, config.templateId, templateParams, {
+    publicKey: config.publicKey,
+  });
 }
