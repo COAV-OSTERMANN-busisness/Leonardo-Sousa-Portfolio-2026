@@ -76,6 +76,7 @@ export const messages = {
         cloud: "CLOUD / BAAS",
         devops: "DEVOPS",
         testing: "TESTES",
+        documentation: "DOCUMENTAÇÃO",
         tools: "IDE / FERRAMENTAS",
         design: "DESIGN",
         cms: "CMS",
@@ -135,7 +136,7 @@ export const messages = {
         },
 
         "gama-fsa": {
-          title: "Gama FSA",
+          title: "Gama Lp",
           description:
             "Wireframe frontend e arquitetura frontend desenvolvidos para o projeto.",
           type: "Arquitetura frontend",
@@ -347,6 +348,7 @@ export const messages = {
         cloud: "CLOUD / BAAS",
         devops: "DEVOPS",
         testing: "TESTING",
+        documentation: "DOCUMENTATION",
         tools: "IDE / TOOLS",
         design: "DESIGN",
         cms: "CMS",
@@ -406,7 +408,7 @@ export const messages = {
         },
 
         "gama-fsa": {
-          title: "Gama FSA",
+          title: "Gama Lp",
           description:
             "Frontend wireframe and frontend architecture developed for the project.",
           type: "Frontend architecture",
@@ -619,6 +621,7 @@ export const messages = {
         cloud: "CLOUD / BAAS",
         devops: "DEVOPS",
         testing: "PRUEBAS",
+        documentation: "DOCUMENTACIÓN",
         tools: "IDE / HERRAMIENTAS",
         design: "DISEÑO",
         cms: "CMS",
@@ -678,7 +681,7 @@ export const messages = {
         },
 
         "gama-fsa": {
-          title: "Gama FSA",
+          title: "Gama Lp",
           description:
             "Wireframe frontend y arquitectura frontend desarrollados para el proyecto.",
           type: "Arquitectura frontend",
@@ -883,13 +886,14 @@ export const messages = {
       title: "技術とツール",
 
       categories: {
-        frontend: "FRONTEND",
-        backend: "BACKEND",
-        mobile: "MOBILE",
+        frontend: "フロントエンド",
+        backend: "バックエンド",
+        mobile: "モバイル",
         database: "データベース",
-        cloud: "CLOUD / BAAS",
-        devops: "DEVOPS",
+        cloud: "クラウド / BaaS",
+        devops: "DevOps",
         testing: "テスト",
+        documentation: "ドキュメント",
         tools: "IDE / ツール",
         design: "デザイン",
         cms: "CMS",
@@ -949,7 +953,7 @@ export const messages = {
         },
 
         "gama-fsa": {
-          title: "Gama FSA",
+          title: "Gama Lp",
           description:
             "プロジェクト向けに開発されたフロントエンドワイヤーフレームおよびフロントエンドアーキテクチャ。",
           type: "フロントエンドアーキテクチャ",

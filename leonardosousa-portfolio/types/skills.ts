@@ -13,6 +13,7 @@ export type SkillCategoryKey =
   | "tools"
   | "design"
   | "cms"
+  | "documentation"
   | "operatingSystems";
 
 export interface Skill {
