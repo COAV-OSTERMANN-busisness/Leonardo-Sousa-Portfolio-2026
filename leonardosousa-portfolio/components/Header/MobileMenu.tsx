@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+
 import Link from "next/link";
 
 import type { Locale } from "../../i18n";
+import { ThemeToggle } from "@/components";
 
 interface MobileMenuProps {
   locale: Locale;
@@ -101,15 +103,16 @@ export default function MobileMenu({
       <aside
         className={[
           "absolute right-0 top-0 h-full w-[min(88vw,380px)]",
-          "border-l border-white/10",
-          "bg-[#07131c]",
+          "border-l border-[var(--color-text-secondary)]/10",
+          "bg-[var(--color-background)]",
+          "text-[var(--color-text-primary)]",
           "shadow-2xl",
           "animate-[slide-in_250ms_ease-out]",
         ].join(" ")}
       >
         <div className="flex h-full flex-col p-6">
           <div className="mb-10 flex items-center justify-between">
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#9cbcd9]">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-text-secondary)]">
               {messages.header.close}
             </span>
 
@@ -117,11 +120,13 @@ export default function MobileMenu({
               type="button"
               onClick={onClose}
               aria-label={messages.accessibility.closeMenu}
-              className="flex h-10 w-10 items-center justify-center rounded-md border border-white/10 text-[#9cbcd9] transition-colors hover:border-[#1b65a6] hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-md border border-[var(--color-text-secondary)]/10 text-[var(--color-text-secondary)] transition-colors hover:border-[var(--color-primary)] hover:text-[var(--color-text-primary)]"
             >
               ×
             </button>
           </div>
+
+          <ThemeToggle />
 
           <nav
             aria-label={messages.header.close}
@@ -133,9 +138,9 @@ export default function MobileMenu({
                 href={`/${locale}${item.href}`}
                 onClick={onClose}
                 className={[
-                  "border-b border-white/10 py-4",
-                  "text-lg font-medium text-white",
-                  "transition-colors hover:text-[#9cbcd9]",
+                  "border-b border-[var(--color-text-secondary)]/10 py-4",
+                  "text-lg font-medium text-[var(--color-text-primary)]",
+                  "transition-colors hover:text-[var(--color-primary)]",
                   index === 0 ? "border-t" : "",
                 ].join(" ")}
               >
@@ -144,33 +149,31 @@ export default function MobileMenu({
             ))}
           </nav>
 
-          <div className="mt-auto border-t border-white/10 pt-6">
-            <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-[#9cbcd9]">
+          <div className="mt-auto border-t border-[var(--color-text-secondary)]/10 pt-6">
+            <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-text-secondary)]">
               {messages.header.language}
             </p>
 
             <div className="grid grid-cols-4 gap-2">
-              {(["pt", "en", "es", "ja"] as Locale[]).map(
-                (item) => (
-                  <Link
-                    key={item}
-                    href={`/${item}`}
-                    hrefLang={item}
-                    onClick={onClose}
-                    className={[
-                      "flex h-10 items-center justify-center rounded-md",
-                      "border border-white/10",
-                      "font-mono text-xs uppercase",
-                      "transition-colors",
-                      item === locale
-                        ? "border-[#1b65a6] bg-[#1b65a6] text-white"
-                        : "text-[#9cbcd9] hover:border-[#1b65a6] hover:text-white",
-                    ].join(" ")}
-                  >
-                    {item}
-                  </Link>
-                ),
-              )}
+              {(["pt", "en", "es", "ja"] as Locale[]).map((item) => (
+                <Link
+                  key={item}
+                  href={`/${item}`}
+                  hrefLang={item}
+                  onClick={onClose}
+                  className={[
+                    "flex h-10 items-center justify-center rounded-md",
+                    "border border-[var(--color-text-secondary)]/10",
+                    "font-mono text-xs uppercase",
+                    "transition-colors",
+                    item === locale
+                      ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
+                      : "text-[var(--color-text-secondary)] hover:border-[var(--color-primary)] hover:text-[var(--color-text-primary)]",
+                  ].join(" ")}
+                >
+                  {item}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

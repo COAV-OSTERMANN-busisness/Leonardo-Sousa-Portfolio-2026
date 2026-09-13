@@ -16,6 +16,14 @@
   --color-light: #ffffff;
 }
 
+[data-theme="light"] {
+  --color-background: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-surface-light: #e9eef3;
+  --color-text-primary: #07131c;
+  --color-text-secondary: #545454;
+}
+
 * {
   box-sizing: border-box;
 }
