@@ -17,11 +17,19 @@
 }
 
 [data-theme="light"] {
+  --color-primary: #1b65a6;
+  --color-secondary: #1d4b73;
+  --color-accent: #3f6f9d;
+
   --color-background: #f5f7fa;
   --color-surface: #ffffff;
   --color-surface-light: #e9eef3;
+
   --color-text-primary: #07131c;
-  --color-text-secondary: #545454;
+  --color-text-secondary: #374151;
+
+  --color-dark: #545454;
+  --color-light: #ffffff;
 }
 
 * {
