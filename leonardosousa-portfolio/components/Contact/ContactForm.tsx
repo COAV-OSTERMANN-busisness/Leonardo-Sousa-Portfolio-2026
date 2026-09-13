@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 
 import { getMessages } from "@/i18n";
+
 import { sendContactEmail } from "@/lib/emailjs";
 
 import { LegalModal } from "@/components/Legal";
@@ -21,19 +22,29 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [website, setWebsite] = useState("");
-
   const [termsOpen, setTermsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    if (loading || website.trim()) {
+  useEffect(() => {
+    if (status === "idle") {
       return;
     }
 
+    const timeout = setTimeout(() => {
+      setStatus("idle");
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [status]);
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (loading || website.trim()) {
+      return;
+    }
     setStatus("idle");
     setTermsOpen(true);
   };
@@ -42,20 +53,16 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
     if (loading) {
       return;
     }
-
     setTermsOpen(false);
     setLoading(true);
     setStatus("idle");
-
     try {
       await sendContactEmail({
         nameOrCompany,
         email,
         message,
       });
-
       setStatus("success");
-
       setNameOrCompany("");
       setEmail("");
       setMessage("");
@@ -71,7 +78,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
     if (loading) {
       return;
     }
-
     setTermsOpen(false);
   };
 
@@ -95,7 +101,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
             aria-hidden="true"
             className="absolute -left-[9999px] h-px w-px overflow-hidden"
           />
-
           <div>
             <label
               htmlFor="contact-name"
@@ -103,7 +108,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
             >
               {messages.name}
             </label>
-
             <input
               id="contact-name"
               type="text"
@@ -119,7 +123,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
               className="w-full rounded-lg border border-white/10 bg-[var(--color-background)] px-4 py-3 text-sm text-[var(--color-text-primary)] outline-none transition-colors placeholder:text-[var(--color-text-secondary)] focus:border-[var(--color-primary)]"
             />
           </div>
-
           <div>
             <label
               htmlFor="contact-email"
@@ -127,7 +130,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
             >
               {messages.email}
             </label>
-
             <input
               id="contact-email"
               type="email"
@@ -144,7 +146,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
               className="w-full rounded-lg border border-white/10 bg-[var(--color-background)] px-4 py-3 text-sm text-[var(--color-text-primary)] outline-none transition-colors placeholder:text-[var(--color-text-secondary)] focus:border-[var(--color-primary)]"
             />
           </div>
-
           <div>
             <label
               htmlFor="contact-message"
@@ -152,7 +153,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
             >
               {messages.message}
             </label>
-
             <textarea
               id="contact-message"
               value={message}
@@ -167,7 +167,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
               className="w-full resize-y rounded-lg border border-white/10 bg-[var(--color-background)] px-4 py-3 text-sm text-[var(--color-text-primary)] outline-none transition-colors placeholder:text-[var(--color-text-secondary)] focus:border-[var(--color-primary)]"
             />
           </div>
-
           <button
             type="submit"
             disabled={loading}
@@ -175,7 +174,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
           >
             {loading ? messages.sending : messages.send}
           </button>
-
           {status === "success" && (
             <p
               role="status"
@@ -184,7 +182,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
               {messages.success}
             </p>
           )}
-
           {status === "error" && (
             <p
               role="alert"
@@ -195,7 +192,6 @@ export default function ContactForm({ messages, terms }: ContactFormProps) {
           )}
         </div>
       </form>
-
       <LegalModal
         open={termsOpen}
         mode="consent"
