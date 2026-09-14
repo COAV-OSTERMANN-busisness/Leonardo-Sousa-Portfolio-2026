@@ -1,4 +1,5 @@
 import { getWebInstrumentations, initializeFaro } from "@grafana/faro-web-sdk";
+import { TracingInstrumentation } from "@grafana/faro-web-tracing";
 
 let faroInitialized = false;
 
@@ -18,15 +19,16 @@ export function initializeFaroMonitoring() {
 
   initializeFaro({
     url,
-
     app: {
       name: appName,
       namespace: appNamespace,
       version: appVersion,
       environment: process.env.NODE_ENV,
     },
-
-    instrumentations: [...getWebInstrumentations()],
+    instrumentations: [
+      ...getWebInstrumentations(),
+      new TracingInstrumentation(),
+    ],
   });
 
   faroInitialized = true;

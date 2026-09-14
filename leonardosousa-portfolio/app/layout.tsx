@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+
 import { Inter, JetBrains_Mono } from "next/font/google";
 
 import "./globals.css";
+
 import AOSProvider from "@/components/providers/AOSProvider";
 import GrafanaProvider from "@/components/providers/GrafanaProvider";
 
@@ -60,7 +62,6 @@ export const metadata: Metadata = {
 
   creator: "Leonardo Sousa",
   publisher: "Leonardo Sousa",
-
   category: "technology",
 
   keywords: [
@@ -123,10 +124,32 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
+const themeInitializer = `
+(function () {
+  try {
+    var savedTheme = localStorage.getItem("theme");
+    var theme =
+      savedTheme === "light" || savedTheme === "dark"
+        ? savedTheme
+        : "dark";
+
+    document.documentElement.setAttribute("data-theme", theme);
+  } catch {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+})();
+`;
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: themeInitializer,
+          }}
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
