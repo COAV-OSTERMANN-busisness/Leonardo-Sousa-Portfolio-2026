@@ -1,12 +1,17 @@
 "use client";
 
 import { useCallback, useState } from "react";
+
 import { usePathname } from "next/navigation";
 
 import LanguageSwitcher from "./LanguageSwitcher";
+
 import Logo from "./Logo";
+
 import MenuButton from "./MenuButton";
+
 import MobileMenu from "./MobileMenu";
+
 import Navigation from "./Navigation";
 
 import {
@@ -38,7 +43,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#07131c]/85 backdrop-blur-md">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-[var(--color-text-secondary)]/10 bg-[var(--color-background)]/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Logo locale={locale} />
 

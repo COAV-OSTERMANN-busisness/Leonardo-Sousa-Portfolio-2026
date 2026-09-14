@@ -1,10 +1,17 @@
-import { Header } from "../../components";
-import { getMessages, type Locale } from "../../i18n";
+import {
+  About,
+  Contact,
+  Footer,
+  Header,
+  Hero,
+  Portfolio,
+  Skills,
+} from "@/components";
+
+import { getMessages, type Locale } from "@/i18n";
 
 interface PageProps {
-  params: Promise<{
-    locale: Locale;
-  }>;
+  params: Promise<{ locale: Locale }>;
 }
 
 export default async function Page({ params }: PageProps) {
@@ -16,8 +23,14 @@ export default async function Page({ params }: PageProps) {
       <Header />
 
       <main>
-        <h1>{messages.hero.title}</h1>
+        <Hero messages={messages} />
+        <About locale={locale} />
+        <Skills locale={locale} />
+        <Portfolio locale={locale} />
+        <Contact locale={locale} />
       </main>
+
+      <Footer locale={locale} />
     </>
   );
 }
