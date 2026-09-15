@@ -128,10 +128,7 @@ export default function MobileMenu({
 
           <ThemeToggle />
 
-          <nav
-            aria-label={messages.header.close}
-            className="flex flex-col"
-          >
+          <nav aria-label={messages.header.close} className="flex flex-col">
             {navigationItems.map((item, index) => (
               <Link
                 key={item.key}
