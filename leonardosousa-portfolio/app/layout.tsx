@@ -144,6 +144,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link
+          rel="shortcut icon"
+          type="image/png"
+          href="https://firebasestorage.googleapis.com/v0/b/template-sites-755c6.appspot.com/o/Leonardo%20Sousa%20Site%2Fimgs%2Ftemplates%2Fshortcut%20icon%20site%20LS%20(1).png?alt=media&token=e72a03ef-5c68-44c1-9d0f-c15f87af07db"
+        />
+
         <script
           dangerouslySetInnerHTML={{
             __html: themeInitializer,

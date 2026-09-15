@@ -126,7 +126,7 @@ export default function MobileMenu({
             </button>
           </div>
 
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
 
           <nav aria-label={messages.header.close} className="flex flex-col">
             {navigationItems.map((item, index) => (
