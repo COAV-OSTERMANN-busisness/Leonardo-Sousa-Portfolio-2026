@@ -5,6 +5,7 @@ import {
   Header,
   Hero,
   Portfolio,
+  Resume,
   Skills,
 } from "@/components";
 
@@ -27,6 +28,7 @@ export default async function Page({ params }: PageProps) {
         <About locale={locale} />
         <Skills locale={locale} />
         <Portfolio locale={locale} />
+        <Resume locale={locale} />
         <Contact locale={locale} />
       </main>
 
