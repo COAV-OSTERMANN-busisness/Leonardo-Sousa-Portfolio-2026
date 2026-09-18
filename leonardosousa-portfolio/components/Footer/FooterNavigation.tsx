@@ -4,6 +4,7 @@ interface FooterNavigationMessages {
     about: string;
     skills: string;
     portfolio: string;
+    resume: string;
     contact: string;
   }
   
@@ -16,6 +17,7 @@ interface FooterNavigationMessages {
     { key: "about", href: "#about" },
     { key: "skills", href: "#skills" },
     { key: "portfolio", href: "#portfolio" },
+    { key: "resume", href: "#resume" },
     { key: "contact", href: "#contact" },
   ] as const;
   
