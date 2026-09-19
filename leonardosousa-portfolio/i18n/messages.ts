@@ -9,6 +9,7 @@ export const messages = {
         about: "Sobre",
         skills: "Skills",
         portfolio: "Projetos",
+        resume: "Currículo",
         contact: "Contato",
       },
     },
@@ -155,6 +156,14 @@ export const messages = {
       },
     },
 
+    resume: {
+      eyebrow: "CURRÍCULO",
+      title: "Experiência e trajetória profissional",
+      description:
+        "Uma visão concisa da minha trajetória profissional, experiência técnica e qualificações.",
+      download: "BAIXAR CURRÍCULO",
+    },
+
     contact: {
       eyebrow: "CONTATO",
       title: "Vamos conversar",
@@ -190,6 +199,7 @@ export const messages = {
         about: "Sobre",
         skills: "Skills",
         portfolio: "Projetos",
+        resume: "Currículo",
         contact: "Contato",
       },
       languages: "Idiomas",
@@ -283,6 +293,7 @@ export const messages = {
         about: "About",
         skills: "Skills",
         portfolio: "Projects",
+        resume: "Resume",
         contact: "Contact",
       },
     },
@@ -427,6 +438,14 @@ export const messages = {
       },
     },
 
+    resume: {
+      eyebrow: "RESUME",
+      title: "Professional experience and journey",
+      description:
+        "A concise overview of my professional journey, technical experience and qualifications.",
+      download: "DOWNLOAD CV",
+    },
+
     contact: {
       eyebrow: "CONTACT",
       title: "Let's talk",
@@ -461,6 +480,7 @@ export const messages = {
         about: "About",
         skills: "Skills",
         portfolio: "Projects",
+        resume: "Resume",
         contact: "Contact",
       },
       languages: "Languages",
@@ -554,6 +574,7 @@ export const messages = {
         about: "Sobre mí",
         skills: "Skills",
         portfolio: "Proyectos",
+        resume: "Currículum",
         contact: "Contacto",
       },
     },
@@ -700,6 +721,14 @@ export const messages = {
       },
     },
 
+    resume: {
+      eyebrow: "CURRÍCULUM",
+      title: "Experiencia y trayectoria profesional",
+      description:
+        "Una visión concisa de mi trayectoria profesional, experiencia técnica y cualificaciones.",
+      download: "DESCARGAR CV",
+    },
+
     contact: {
       eyebrow: "CONTACTO",
       title: "Hablemos",
@@ -735,6 +764,7 @@ export const messages = {
         about: "Sobre mí",
         skills: "Skills",
         portfolio: "Proyectos",
+        resume: "Currículum",
         contact: "Contacto",
       },
       languages: "Idiomas",
@@ -828,6 +858,7 @@ export const messages = {
         about: "概要",
         skills: "スキル",
         portfolio: "プロジェクト",
+        resume: "履歴書",
         contact: "お問い合わせ",
       },
     },
@@ -972,6 +1003,13 @@ export const messages = {
       },
     },
 
+    resume: {
+      eyebrow: "履歴書",
+      title: "職務経験とキャリア",
+      description: "これまでのキャリア、技術経験、資格を簡潔にまとめています。",
+      download: "履歴書をダウンロード",
+    },
+
     contact: {
       eyebrow: "お問い合わせ",
       title: "お問い合わせください",
@@ -1007,6 +1045,7 @@ export const messages = {
         about: "概要",
         skills: "スキル",
         portfolio: "プロジェクト",
+        resume: "履歴書",
         contact: "お問い合わせ",
       },
       languages: "言語",

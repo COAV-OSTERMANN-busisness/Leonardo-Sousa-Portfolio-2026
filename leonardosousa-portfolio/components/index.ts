@@ -6,3 +6,4 @@ export { Portfolio } from "./Portfolio";
 export { Contact } from "./Contact";
 export { Footer } from "./Footer";
 export { ThemeToggle } from "./ThemeToggle";
+export { Resume } from "./Resume"

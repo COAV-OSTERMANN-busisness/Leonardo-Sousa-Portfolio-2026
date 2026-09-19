@@ -18,6 +18,7 @@ interface MobileMenuProps {
         about: string;
         skills: string;
         portfolio: string;
+        resume: string;
         contact: string;
       };
     };
@@ -46,6 +47,10 @@ const navigationItems = [
   {
     key: "portfolio",
     href: "#portfolio",
+  },
+  {
+    key: "resume",
+    href: "#resume",
   },
   {
     key: "contact",
