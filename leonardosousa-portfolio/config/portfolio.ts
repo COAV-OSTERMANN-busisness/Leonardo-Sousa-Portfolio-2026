@@ -22,11 +22,11 @@ export const portfolioProjects = [
   {
     id: "gama-transportes-log",
     year: "2026",
-    url: "https://gamatransporteslog.com.br/",
+    url: "http://gamafsalog.com.br/",
   },
   {
     id: "gama-fsa",
     year: "2026",
-    url: "http://gamafsalog.com.br/",
+    url: "https://gamatransporteslog.com.br/",
   },
 ] as const;
